@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.navbar {
+  height: 70px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1e293b;
+}
+
+.navbar h2 {
+  font-size: 22px;
+}
+
+.status {
+  color: #22c55e;
+  font-size: 14px;
+}
+
+.container {
+  width: 84%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 70px;
+}
+
+.tag {
+  color: #38bdf8;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #38bdf8;
+}
+
+.description {
+  max-width: 650px;
+  margin: auto;
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  border: none;
+  padding: 13px 22px;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: #082f49;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.secondary {
+  background: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #111c31;
+  border: 1px solid #1e293b;
+  padding: 28px;
+  border-radius: 12px;
+}
+
+.icon {
+  color: #38bdf8;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.pipeline {
+  margin: 70px 0;
+  padding: 30px;
+  background: #111c31;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.pipeline h2 {
+  margin-bottom: 25px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.steps div {
+  padding: 12px 18px;
+  background: #1e293b;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.steps span {
+  color: #38bdf8;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+  border-top: 1px solid #1e293b;
+}
+
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
